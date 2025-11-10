@@ -1,16 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./dist/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
     <title>Image Gallery</title>
-</head>
-<body>
-    <div>
-        <h1 class="font-bold text-center">Image Gallery</h1>
-       <h1 class="text-3xl font-bold text-blue-600">Hello Tailwind!</h1>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">📸 Image Gallery</h1>
+      </header>
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <button
+          class="filter-btn active px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
+          data-filter="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
+          data-filter="nature"
+        >
+          Nature
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
+          data-filter="city"
+        >
+          City
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
+          data-filter="travel"
+        >
+          Travel
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
+          data-filter="electronics"
+        >
+          Electronics
+        </button>
+      </div>
+
+          <div class="cards-section max-w-7xl mx-auto px-4 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/nature1.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Beautiful Forest</h3>
+      <p class="text-sm text-gray-500">Nature</p>
     </div>
-</body>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/nature2.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Mountain View</h3>
+      <p class="text-sm text-gray-500">Nature</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/nature3.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">River Stream</h3>
+      <p class="text-sm text-gray-500">Nature</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/nature4.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Sunset Valley</h3>
+      <p class="text-sm text-gray-500">Nature</p>
+    </div>
+  </div>
+
+<div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/city1.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">City Skyline</h3>
+      <p class="text-sm text-gray-500">City</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/city2.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Busy Streets</h3>
+      <p class="text-sm text-gray-500">City</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/city3.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Riverside City</h3>
+      <p class="text-sm text-gray-500">City</p>
+    </div>
+  </div>
+
+  <div class="bg-gray-900 rounded-lg overflow-hidden">
+    <img src="images/city4.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+    <div class="p-2">
+      <h3 class="text-md font-bold text-white">Sunset Boulevard</h3>
+      <p class="text-sm text-gray-500">City</p>
+    </div>
+  </div>
+
+</div>
+          </div>
+    </div>
+  </body>
 </html>
