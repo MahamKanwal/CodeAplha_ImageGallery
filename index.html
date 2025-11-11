@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <title>Image Gallery</title>
   </head>
+
   <body class="min-h-screen bg-gray-100">
     <div class="container mx-auto px-4 py-8">
       <header class="text-center mb-12">
         <h1 class="text-4xl font-bold text-gray-800 mb-4">📸 Image Gallery</h1>
       </header>
+
+      <!-- Filter Buttons -->
       <div class="flex flex-wrap justify-center gap-3 mb-8">
         <button
           class="filter-btn active px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
@@ -26,92 +30,221 @@
           Nature
         </button>
         <button
-          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
           data-filter="city"
         >
           City
         </button>
         <button
-          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
           data-filter="travel"
         >
           Travel
         </button>
         <button
-          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hoverLshadow-md transition-all"
-          data-filter="electronics"
+          class="filter-btn px-4 py-2 rounded-full bg-white shadow-sm hover:shadow-md transition-all"
+          data-filter="laptop"
         >
-          Electronics
+          Laptop
         </button>
       </div>
 
-          <div class="cards-section max-w-7xl mx-auto px-4 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/nature1.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Beautiful Forest</h3>
-      <p class="text-sm text-gray-500">Nature</p>
-    </div>
-  </div>
+      <!-- Image Cards -->
+      <div
+        class="main cards-section max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Nature -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="nature"
+        >
+          <img
+            src="images/nature1.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="nature"
+        >
+          <img
+            src="images/nature2.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="nature"
+        >
+          <img
+            src="images/nature3.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="nature"
+        >
+          <img
+            src="images/nature4.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
 
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/nature2.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Mountain View</h3>
-      <p class="text-sm text-gray-500">Nature</p>
+        <!-- City -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="city"
+        >
+          <img
+            src="images/city1.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="city"
+        >
+          <img
+            src="images/city2.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="city"
+        >
+          <img
+            src="images/city3.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="city"
+        >
+          <img
+            src="images/city4.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <!-- Travel -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="travel"
+        >
+          <img
+            src="images/travel1.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="travel"
+        >
+          <img
+            src="images/travel2.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="travel"
+        >
+          <img
+            src="images/travel3.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="travel"
+        >
+          <img
+            src="images/travel4.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <!-- Laptop -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="laptop"
+        >
+          <img
+            src="images/laptop1.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="laptop"
+        >
+          <img
+            src="images/laptop2.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="laptop"
+        >
+          <img
+            src="images/laptop3.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden text-white"
+          data-category="laptop"
+        >
+          <img
+            src="images/laptop4.avif"
+            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/nature3.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">River Stream</h3>
-      <p class="text-sm text-gray-500">Nature</p>
-    </div>
-  </div>
+    <!-- Modal -->
+    <div
+      class="img-box fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4 py-8"
+    >
+      <div class="relative w-full max-w-4xl">
+        <button
+          id="close"
+          class="absolute top-3 right-3 z-10 rounded-full bg-black/40 p-2 shadow hover:bg-black/60 focus:outline-none focus:ring-2 focus:ring-white text-white"
+        >
+          &times;
+        </button>
 
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/nature4.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Sunset Valley</h3>
-      <p class="text-sm text-gray-500">Nature</p>
-    </div>
-  </div>
-
-<div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/city1.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">City Skyline</h3>
-      <p class="text-sm text-gray-500">City</p>
-    </div>
-  </div>
-
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/city2.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Busy Streets</h3>
-      <p class="text-sm text-gray-500">City</p>
-    </div>
-  </div>
-
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/city3.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Riverside City</h3>
-      <p class="text-sm text-gray-500">City</p>
-    </div>
-  </div>
-
-  <div class="bg-gray-900 rounded-lg overflow-hidden">
-    <img src="images/city4.avif" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-    <div class="p-2">
-      <h3 class="text-md font-bold text-white">Sunset Boulevard</h3>
-      <p class="text-sm text-gray-500">City</p>
-    </div>
-  </div>
-
-</div>
+        <div class="rounded-lg bg-gray-900/90 p-4">
+          <div class="flex items-center justify-center">
+            <img
+              id="img"
+              src=""
+              alt=""
+              class="max-h-[80vh] w-full object-contain rounded-lg"
+            />
           </div>
+
+          <div
+            class="pointer-events-none absolute inset-0 flex justify-between items-center px-2"
+          >
+            <button
+              class="prev pointer-events-auto ml-2 rounded-full bg-black/30 p-3 text-2xl text-white shadow hover:bg-black/50 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              ❮
+            </button>
+            <button
+              class="next pointer-events-auto mr-2 rounded-full bg-black/30 p-3 text-2xl text-white shadow hover:bg-black/50 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              ❯
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
